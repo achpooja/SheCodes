@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SheCodes</h1>
+    <button>Apply now</button>
+
+    <script>
+        function checkInfo(){
+        let name=prompt("What is your First Name?");
+        let age=prompt("What is your age?");
+        let h1=document.querySelector("h1");
+
+        if(age<18){
+            h1.innerHTML="Soory, "+name+"! You cannot join SheCodes";
+        }
+        else{
+            h1.innerHTML="Hi, "+name+"! Welcome to SheCodes!";
+        }
+
+        }
+        let button1=document.querySelector("button");
+        button1.addEventListener("click",checkInfo);
+    </script>
+</body>
+</html>
